@@ -1,7 +1,6 @@
 {
   "name": "pokedex-front-react",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,6 @@
   "homepage": "https://github.com/LoBot1/POKEDEX-FRONT-REACT#readme",
   "dependencies": {
     "create-react-app": "^5.0.1"
-  }
+  },
+  "description": ""
 }

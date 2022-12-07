@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';             
 
+import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import PokedexAll from "./pages/PokedexAll";
 import PokedexCatch from "./pages/PokedexCatch";
@@ -10,6 +11,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import React from 'react';
 
 //App.js
 function App(props){
@@ -27,6 +29,9 @@ function App(props){
         <Route path="/type">
           <PokemonType/> 
         </Route>
+        <React.Fragment>
+          <NavBar />
+        </React.Fragment>
       </Switch>
   </Router>
 }
