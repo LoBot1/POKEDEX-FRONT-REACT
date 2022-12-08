@@ -1,7 +1,15 @@
-
+import React from 'react';
+import { Component } from 'react';
+import NavBar from '../components/NavBar';
 
 function Home(props){
-    return <h1>Acdqzceuil</h1>;
+    return (
+        <div>
+        <NavBar />
+        <h1>dzqdqzdqz</h1>
+        </div>
+    );
+
 }
 
 export default Home;

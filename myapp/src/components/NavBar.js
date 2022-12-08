@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
+import './main.css'
+// npm install react-icons
 function  NavBar(){
     const navRef = useRef();
     const showNavbar = () => {

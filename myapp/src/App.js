@@ -17,7 +17,7 @@ import React from 'react';
 function App(props){
   return <Router>
       <Switch>
-        <Route exact path="/home">
+        <Route exact path="/Home">
           <Home/> 
         </Route>
         <Route path="/all">

@@ -1,5 +1,12 @@
+import NavBar from '../components/NavBar';
+
 function PokedexCatch(props){
-    return <h1>avance</h1>;
+    return (
+        <div>
+        <NavBar />
+        <h1>catch</h1>
+        </div>
+    );
 }
 
 export default PokedexCatch;
