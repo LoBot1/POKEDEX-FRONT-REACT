@@ -1,5 +1,5 @@
+import '../style/card.css'
 import NavBar from '../components/NavBar';
-
 function PokedexCatch(props){
     return (
         <div>

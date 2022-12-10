@@ -48,15 +48,43 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.num{
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.name{
     text-align: center;
 }
-html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type1 {
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     text-align: right;
     padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
 }
-html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type2 {
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     text-align: right;
     padding-right: 5px;
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.num{
     padding-top: 20px;
     text-align: center;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn {
+    border: hidden;
+    font-size: 30px;
+    align-items: center;
+    -webkit-transform: translate(138px,0px); /* Safari and Chrome */
+}
+
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn{
+    visibility: hidden;
+    
+ }
+ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn a{
+    background-color: blue;
+    border-radius: 0px;
+    width: auto;
+ }
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn:hover{
+    background-color:rgb(47, 48, 95) ;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn a svg{
+    background-color: rgb(255, 255, 255) ;
+    color: #0c1c3e;
+    border-radius: 30px;
+    border: hidden;
+    visibility: visible;
 }
