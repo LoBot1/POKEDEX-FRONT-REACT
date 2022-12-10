@@ -1,0 +1,62 @@
+
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+                
+
+html body div#root div.pokemon-list div.flex{
+    padding: 0px;
+    margin: 0px;
+    background-color: #0c1c3e;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+html body div#root div.pokemon-list div.flex div.bloc-pokemon{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 5px 2px rgb(168, 167, 167); */
+    background-color: blue;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon:hover{
+    margin-top: 5px;
+    transition: 0.2s;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div{
+    color: white;
+    font-family: 'Pokemon Solid', sans-serif;   
+ 
+                                              
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon:hover{
+    background-color: rgb(47, 48, 95);
+    
+    /* transition: 0.6s; */
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.num{
+   color: white;
+   padding-left: 10px;
+   padding-bottom: 10px;
+
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.name{
+    text-align: center;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type1 {
+    text-align: right;
+    padding-right: 5px;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type2 {
+    text-align: right;
+    padding-right: 5px;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.num{
+    padding-top: 20px;
+    text-align: center;
+}

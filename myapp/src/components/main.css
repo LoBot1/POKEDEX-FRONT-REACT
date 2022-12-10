@@ -8,7 +8,7 @@
 
 }    
 :root{
-    --mainColor: rgb(37, 37, 119);
+    --mainColor: #10234d;
     --mainColorLight : rgb(80, 80, 168);
     --secondaryColor : red;
     --textColor:rgb(163, 163, 163);
@@ -16,7 +16,7 @@
 
 header{
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     height: 80px;
     padding: 0 2rem;
@@ -30,7 +30,7 @@ header  a{
     color: var(--textColor);
     text-decoration: none;
     margin: 0 2rem;
-    border: 2px solid rgb(35, 35, 146);
+    border: 2px solid #123277;
     padding: 10px;
     border-radius: 30px;
 }
@@ -41,8 +41,19 @@ header  a:hover{
     box-shadow: 2px 2px 20px 2px grey;
 }
 
+html body div#root div.pokemon-list div header div.logo img.imglogo{
+    width: 40px;
+    height: 40px;
+    text-align: center;
 
-
+}
+html body div#root div.pokemon-list div header div.logo{
+    margin-top: 15px;
+    text-align: center;
+}
+html body div#root div.pokemon-list div header nav a{
+    margin: 10px;
+}
 header .nav-btn{
     cursor: pointer;
     background: transparent;

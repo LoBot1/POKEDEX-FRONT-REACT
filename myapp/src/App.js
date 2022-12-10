@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';             
 
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import PokedexAll from "./pages/PokedexAll";
 import PokedexCatch from "./pages/PokedexCatch";
 import PokemonType from "./pages/PokemonType";

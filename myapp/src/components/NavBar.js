@@ -10,6 +10,9 @@ function  NavBar(){
     
     return( 
         <header>
+            <div className="logo">
+                <img className="imglogo" src="https://www.webstickersmuraux.com/fr/img/pokgo03-png/folder/products-detalle-png/autocollants-poke-ball---pokemon.png"></img>
+            </div>
             <nav ref={navRef}>
                 <a href="Home">
                     home
