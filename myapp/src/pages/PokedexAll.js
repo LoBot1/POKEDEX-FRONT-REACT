@@ -22,7 +22,7 @@ function PokedexAll(props){
             <NavBar />
         </div>
         <div className='titre'>
-            <h1>Pokemon</h1>
+            <h1>Pokemon </h1>
         </div>
         <div className="flex">
         {

@@ -47,6 +47,11 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.num{
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.name{
     text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     text-align: right;
@@ -54,6 +59,9 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     display: flex;
     justify-content: space-around;
     border-top: 4px solid white;
+    font-size: 20px;
+    letter-spacing: 2px;
+
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     text-align: right;
@@ -68,6 +76,24 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
     font-size: 30px;
     align-items: center;
     -webkit-transform: translate(138px,0px); /* Safari and Chrome */
+  
+
+}
+
+
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.nav-btn.nav-close-btn {
+    border-radius: 30px;
+    padding: 5px;
+    border: 1px solid #0c1c3e;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.nav-btn.nav-close-btn:hover{
+    transition: 0.35s;
+    border: 2px solid var(--textColor);
+    color: white;
+    box-shadow: 2px 2px 20px 2px grey;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.nav-btn.nav-close-btn a {
+    color: black;
 }
 
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn{
@@ -99,6 +125,8 @@ html body div#root div.pokemon-list div.titre{
     padding-top: 10px ;
     padding-left: 20px;
     padding-right: 20px;
+    letter-spacing: 4px;
+
 }
 html body div#root div.pokemon-list div.titre h1{
     font-family: 'Pokemon Solid', sans-serif;   
