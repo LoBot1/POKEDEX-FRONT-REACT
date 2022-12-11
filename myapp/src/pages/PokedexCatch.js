@@ -20,6 +20,9 @@ function PokemonCatch(props){
         <div>
             <NavBar />
         </div>
+        <div className='titre'>
+            <h1>Pokemon Attrapé</h1>
+        </div>
         <div className="flex">
         {
             pokemons.map((pokemon,key) =>{

@@ -53,6 +53,7 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     padding-right: 5px;
     display: flex;
     justify-content: space-around;
+    border-top: 4px solid white;
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div div.type {
     text-align: right;
@@ -89,6 +90,22 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
     visibility: visible;
 }
 
+
+html body div#root div.pokemon-list div.titre{
+    background-color: #0c1c3e;
+    align-items: center;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;   
+    padding-top: 10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+html body div#root div.pokemon-list div.titre h1{
+    font-family: 'Pokemon Solid', sans-serif;   
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+}
 @media only screen and (max-width: 1640px){
     html body div#root div.pokemon-list div.flex{
         padding: 0px;
@@ -130,6 +147,41 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
         background-color: #0c1c3e;
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+}
+@media only screen and (max-width: 850px){
+    html body div#root div.pokemon-list div.flex{
+        padding: 0px;
+        margin: 0px;
+        background-color: #0c1c3e;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+
+}
+@media only screen and (max-width: 650px){
+    html body div#root div.pokemon-list div.flex{
+        padding: 0px;
+        margin: 0px;
+        background-color: #0c1c3e;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;

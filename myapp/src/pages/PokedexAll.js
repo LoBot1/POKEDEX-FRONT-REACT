@@ -21,6 +21,9 @@ function PokedexAll(props){
         <div>
             <NavBar />
         </div>
+        <div className='titre'>
+            <h1>Pokemon</h1>
+        </div>
         <div className="flex">
         {
             pokemons.map((pokemon,key) =>{
