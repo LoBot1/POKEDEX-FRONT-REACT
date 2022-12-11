@@ -97,6 +97,7 @@ header .nav-btn{
     }
     header nav.responsive_nav{
         transform: none;
+        z-index: 1;
     }
     nav .nav-close-btn{
         position: absolute;

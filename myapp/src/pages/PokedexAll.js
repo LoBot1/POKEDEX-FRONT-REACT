@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useInsertionEffect, useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
 import { AiFillPlusCircle, FaFrownOpen, FaPlus, FaPlusCircle } from 'react-icons/fa';
-import { getAll } from '../api/api';
+import { Catch, Delete, getAll } from '../api/api';
 import NavBar from '../components/NavBar';
 import '../style/card.css'
 
@@ -27,6 +28,11 @@ function PokedexAll(props){
                 <a href='type'>
                     <div className='card'>
                         <div className='name'>
+                        <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
+                                    <a href="catch">
+                                        <AiOutlineClose/>
+                                    </a>
+                                </button>
                             {pokemon.name}
                         </div>
                         <div className='image'>
@@ -43,8 +49,8 @@ function PokedexAll(props){
                         <div className='num'>
                             {pokemon.num}
                         </div>
-                        <div className='button'>
-                            <button className="nav-btn nav-close-btn" >
+                        <div className='button' >
+                            <button className="nav-btn nav-close-btn" onClick={() => Catch(pokemon._id)} >
                                 <a href="catch">
                                     <FaPlus/>
                                 </a>

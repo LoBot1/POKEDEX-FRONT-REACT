@@ -88,3 +88,20 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
     border: hidden;
     visibility: visible;
 }
+@media only screen and (max-width: 1024px){
+    html body div#root div.pokemon-list div.flex{
+        padding: 0px;
+        margin: 0px;
+        background-color: #0c1c3e;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+}
