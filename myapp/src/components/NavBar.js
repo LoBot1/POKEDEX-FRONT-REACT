@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import './main.css'
 // npm install react-icons
 function  NavBar(){
@@ -14,15 +15,10 @@ function  NavBar(){
                 <img className="imglogo" src="https://www.webstickersmuraux.com/fr/img/pokgo03-png/folder/products-detalle-png/autocollants-poke-ball---pokemon.png"></img>
             </div>
             <nav ref={navRef}>
-                <a href="Home">
-                    home
-                </a>
-                <a href="all">
-                    Pokedex
-                </a>
-                <a href="catch">
-                    Mes pokemons
-                </a>
+                <Link to="/home">home</Link>
+                <Link to="/all">all</Link>
+                <Link to="/catch">Pokedex</Link>
+
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
                 </button>

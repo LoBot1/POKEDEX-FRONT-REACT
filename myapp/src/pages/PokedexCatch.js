@@ -1,6 +1,7 @@
 import { useEffect, useInsertionEffect, useState } from 'react';
 import {AiOutlineEdit,  AiOutlineClose } from 'react-icons/ai';
-import { Delete, getCatch } from '../api/api';
+import { Link } from 'react-router-dom';
+import { Delete, getCatch, getOne } from '../api/api';
 import NavBar from '../components/NavBar';
 import '../style/card.css'
 
@@ -27,20 +28,13 @@ function PokemonCatch(props){
         {
             pokemons.map((pokemon,key) =>{
             return <div key={key} className="bloc-pokemon">
-                <a href='type'>
                     <div className='card'>
                         <div className='name'>
-                                <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
-                                    <a href="catch">
-                                        <AiOutlineClose/>
-                                    </a>
-                                </button>
-                            {pokemon.name}
-                            <button className="nav-btn nav-close-btn">
-                                <a href="catch">
-                                    <AiOutlineEdit/>
-                                </a>
+                            <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
+                            <Link to="/catch"><AiOutlineClose/></Link>
                             </button>
+                            {pokemon.name}
+                            <Link to={"/pokemon/"+pokemon._id}><AiOutlineEdit/></Link>
                         </div>
                         
                         <div className='image'>
@@ -58,7 +52,7 @@ function PokemonCatch(props){
                             {pokemon.num}
                         </div>
                     </div>
-                </a>
+                
             </div>
             })
         }

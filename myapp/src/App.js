@@ -29,6 +29,9 @@ function App(props){
         <Route path="/type">
           <PokemonType/> 
         </Route>
+        <Route path="/pokemon/:id">
+          <PokemonType />
+        </Route>
         <React.Fragment>
           <NavBar />
         </React.Fragment>

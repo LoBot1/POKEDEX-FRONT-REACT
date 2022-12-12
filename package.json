@@ -16,7 +16,8 @@
   },
   "homepage": "https://github.com/LoBot1/POKEDEX-FRONT-REACT#readme",
   "dependencies": {
-    "create-react-app": "^5.0.1"
+    "create-react-app": "^5.0.1",
+    "react-scripts": "^5.0.1"
   },
   "description": ""
 }
