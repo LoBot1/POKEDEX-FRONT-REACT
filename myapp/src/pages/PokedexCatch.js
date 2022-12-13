@@ -31,10 +31,13 @@ function PokemonCatch(props){
                     <div className='card'>
                         <div className='name'>
                             <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
-                            <Link to="/catch"><AiOutlineClose/></Link>
+                            <Link to="/all"><AiOutlineClose/></Link>
                             </button>
                             {pokemon.name}
-                            <Link to={"/pokemon/"+pokemon._id}><AiOutlineEdit/></Link>
+                            <button className='edit'>
+                                <Link to={"/pokemon/"+pokemon._id}><AiOutlineEdit/></Link>
+                            </button>
+                            
                         </div>
                         
                         <div className='image'>
