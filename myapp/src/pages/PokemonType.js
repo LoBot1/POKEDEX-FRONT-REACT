@@ -6,6 +6,7 @@ import {MdCatchingPokemon, MdDelete} from 'react-icons/md';
 import {GrValidate} from 'react-icons/gr';
 import { Catch, Delete, getAll, getCatch, getOne } from '../api/api';
 import NavBar from '../components/NavBar';
+import '../style/pokemon.css'
 
 
 
@@ -17,11 +18,13 @@ function PokedexType(props){
     // récupérer la liste des users seulement au chargement du composant ! 
         const pokemonsFetched = getOne(id);
         pokemonsFetched
-            .then(result => setPokemon(result))
+            .then(result => {
+                setPokemon(result.pokemon)
+            })
             .catch(error=>console.error("Erreur avec notre API :",error.message));
     },[]);
    
-    return <div className="pokemon-list">
+    return <div className="pokemons-list">
         <div>
             <NavBar />
         </div>
@@ -29,13 +32,12 @@ function PokedexType(props){
             <h1>Pokemon </h1>
         </div>
         <div className="flex">
-            <div className="bloc-pokemon">
+            <div className="bloc-pokemonOne">
                         <div className='card'>
                             <div className='name'>
-                            <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
-                            <Link className='novalid' to="/catch"><MdDelete/></Link>
-
-                                    </button>
+                                <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
+                                    <Link className='novalid' to="/catch"><MdDelete/></Link>
+                                </button>
                                 {pokemon.name}
                             </div>
                             <div className='image'>
@@ -65,7 +67,6 @@ function PokedexType(props){
                             </div>
                         </div>
                 </div>
-        
         </div>
     </div>;
 }
