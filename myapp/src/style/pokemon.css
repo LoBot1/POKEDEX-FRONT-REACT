@@ -1,20 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 
                 
-
 html body div#root div.pokemons-list div.flex{
-    padding: 0px;
+    /* padding: 0px; */
     margin: 0px;
-    background-color: #0c1c3e;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding-top: 12px;
-    padding-left: 130px;
-    padding-right: 130px;
-    
+    display: flex;
+    justify-content: center;
+    background-image: url(../photo/pokemonbanner.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 14.05%;
+
 }
 
 html body div#root div.pokemons-list div.flex div.bloc-pokemonOne{
@@ -139,7 +134,8 @@ html body div#root div.pokemons-list div.titre h1{
         padding: 0px;
         margin: 0px;
         background-color: #0c1c3e;
-        display: grid;
+        display: flex;
+        justify-content: center;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(3,1fr);
         grid-column-gap: 20px;

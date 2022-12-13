@@ -85,11 +85,11 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.nav-btn.nav-close-btn {
     border-radius: 30px;
     padding: 5px;
-    border: 1px solid #0c1c3e;
+    border: 2px solid var(--textColor);
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.nav-btn.nav-close-btn:hover{
     transition: 0.35s;
-    border: 2px solid var(--textColor);
+    border-color: white;
     color: white;
     box-shadow: 2px 2px 20px 2px grey;
 }
@@ -116,6 +116,29 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
     border: hidden;
     visibility: visible;
 }
+
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.edit{
+    width: 27px;
+    height: 34px;
+    background-color: rgb(255, 255, 255) ;
+    color: #0c1c3e;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border: hidden;
+    visibility: visible;
+    color: black;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.edit a svg{
+    color: black;
+}
+
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.edit:hover{
+    border-color: white;
+    box-shadow: 2px 2px 20px 2px grey;
+    transition: 0.2s;
+
+}
+
 
 
 html body div#root div.pokemon-list div.titre{

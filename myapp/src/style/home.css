@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html body div#root div div.page{
+    /* background-color:#0c1c3e ; */
+    padding-bottom: 8.6%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(https://images4.alphacoders.com/686/thumb-1920-686166.jpg);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background: blur(4px);
+}
+
+html body div#root div div.page div.imgtitle{
+    display: flex;
+    justify-content: space-around;
+}
+html body div#root div div.page div.imgtitle img{
+    padding-top:  40px; ;
+}
+
+html body div#root div div.page div{
+    display: flex;
+    justify-content: space-around;
+}
+
+html body div#root div div.page div div.button1{
+    outline: none;
+    padding-top: 30px;
+}
+html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn{
+    padding: 50px;
+    background-image: url(https://wallpaperaccess.com/full/24936.jpg);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    border: 2px solid rgb(155, 153, 153);
+    border-radius: 30px;
+}
+html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn:hover{
+    color: white;
+    border-color: white;
+    box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn a{
+    text-decoration: none;
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(177, 174, 174);
+    font-family: 'Pokemon Solid', sans-serif;   
+    font-family: 'Pokemon Solid', sans-serif;   
+}
+html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn a:hover{
+    color: white;
+    transition: 0.3s;
+}
+html body div#root div div.page div div.button2{
+    outline: none;
+    padding-top: 30px;
+}
+html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn{
+    padding: 50px;
+    background-image: url(https://wallpaperaccess.com/full/24936.jpg);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+
+    border: 2px solid rgb(155, 153, 153);
+    border-radius: 30px;
+}
+html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn:hover{
+    color: white;
+    border-color: white;
+    box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn a{
+    text-decoration: none;
+    padding: 50px;
+    font-size: 30px;
+    color: rgb(177, 174, 174);
+    font-family: 'Pokemon Solid', sans-serif;   
+
+}
+html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn a:hover{
+    color: white;
+    transition: 0.3s;
+}

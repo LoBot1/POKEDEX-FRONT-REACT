@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { AiFillPlusCircle, FaFrownOpen, FaPlus, FaPlusCircle, } from 'react-icons/fa';
 import {MdCatchingPokemon, MdDelete} from 'react-icons/md';
 import {GrValidate} from 'react-icons/gr';
-import { Catch, Delete, getAll, getCatch, getOne } from '../api/api';
+import { Catch, Delete, getAll, getCatch, getOne, Update} from '../api/api';
 import NavBar from '../components/NavBar';
 import '../style/pokemon.css'
 
@@ -23,6 +23,13 @@ function PokedexType(props){
             })
             .catch(error=>console.error("Erreur avec notre API :",error.message));
     },[]);
+        const { register, handleSubmit } = Update();
+        const onSubmit = (data) => {
+          console.log(data);
+          /*Coder ici pour préparer l'appel réseau POST avec FETCH !*/
+          //On peut transformer les données en JSON pour les envoyer dans notre appel
+          //JSON.stringify(data);
+        }
    
     return <div className="pokemons-list">
         <div>
@@ -32,27 +39,33 @@ function PokedexType(props){
             <h1>Pokemon </h1>
         </div>
         <div className="flex">
-            <div className="bloc-pokemonOne">
+            <div className="bloc-edit">
                         <div className='card'>
                             <div className='name'>
                                 <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
                                     <Link className='novalid' to="/catch"><MdDelete/></Link>
                                 </button>
-                                {pokemon.name}
+                                <input  type="text" id="name" name="name" defaultValue={pokemon.name} onClick={() => Update()}></input>
                             </div>
                             <div className='image'>
+                                    <input  type="text" id="name" name="name" defaultValue={pokemon.img} onClick={() => Update()} ></input>
                                 <img src={pokemon.img} />
                             </div>
                             <div className='type'>
                                 <div className='type1'>
-                                    {pokemon.type1}
+                                    <input  type="text" id="name" name="name" defaultValue={pokemon.type1} onClick={() => Update()}></input>
                                 </div>
                                 <div className='type2'>
-                                    {pokemon.type2}
+                                    <input  type="text" id="name" name="name" defaultValue={pokemon.type2} ></input>.
+                                    <button onClick={() => Update(pokemon._id,pokemon.name,pokemon.type1,pokemon.type2,pokemon.num,pokemon.desc.pokemon.img)}>valider</button>
+
                                 </div>
                             </div>
                             <div className='num'>
-                                {pokemon.num}
+                                <input  type="text" id="name" name="name" defaultValue={pokemon.num} onClick={() => Update()}></input>
+                            </div>
+                            <div className='desc'>
+                                <input  type="text" id="name" name="name" defaultValue={pokemon.desc} onClick={() => Update()}></input>
                             </div>
                             <div className='button' >
                                 {/* {
@@ -65,6 +78,7 @@ function PokedexType(props){
                                 } */}
                                 
                             </div>
+                            
                         </div>
                 </div>
         </div>

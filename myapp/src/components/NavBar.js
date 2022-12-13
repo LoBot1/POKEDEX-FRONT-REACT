@@ -16,7 +16,7 @@ function  NavBar(){
             </div>
             <nav ref={navRef}>
                 <Link to="/home">home</Link>
-                <Link to="/all">all</Link>
+                <Link to="/all">Pokemon</Link>
                 <Link to="/catch">Pokedex</Link>
 
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
