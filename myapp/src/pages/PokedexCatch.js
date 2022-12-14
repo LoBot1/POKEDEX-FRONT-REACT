@@ -1,7 +1,7 @@
 import { useEffect, useInsertionEffect, useState } from 'react';
 import {AiOutlineEdit,  AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { Delete, getCatch, getOne } from '../api/api';
+import {  Free, getCatch, getOne } from '../api/api';
 import NavBar from '../components/NavBar';
 import '../style/card.css'
 
@@ -30,7 +30,7 @@ function PokemonCatch(props){
             return <div key={key} className="bloc-pokemon">
                     <div className='card'>
                         <div className='name'>
-                            <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
+                            <button className="nav-btn nav-close-btn" onClick={() => Free(pokemon.name) } >
                             <Link to="/all"><AiOutlineClose/></Link>
                             </button>
                             {pokemon.name}

@@ -6,6 +6,8 @@ import Home from "./pages/home";
 import PokedexAll from "./pages/PokedexAll";
 import PokedexCatch from "./pages/PokedexCatch";
 import PokemonType from "./pages/PokemonType";
+import PokemonCreate from "./pages/PokemonCreate";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +33,9 @@ function App(props){
         </Route>
         <Route path="/pokemon/:id">
           <PokemonType />
+        </Route>
+        <Route path="/create">
+          <PokemonCreate/> 
         </Route>
         <React.Fragment>
           <NavBar />

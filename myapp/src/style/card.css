@@ -144,7 +144,10 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name 
 
 }
 
-
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.image img{
+    width: 256px;
+    height: 256px;
+}
 
 html body div#root div.pokemon-list div.titre{
     background-color: #0c1c3e;
@@ -163,6 +166,8 @@ html body div#root div.pokemon-list div.titre h1{
     border: 2px solid white;
     border-radius: 30px;
 }
+
+
 @media only screen and (max-width: 1640px){
     html body div#root div.pokemon-list div.flex{
         padding: 0px;

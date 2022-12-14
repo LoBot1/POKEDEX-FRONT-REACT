@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
+import { MdCatchingPokemon } from "react-icons/md";
 import { Link } from "react-router-dom";
-import './main.css'
+import '../style/main.css'
 // npm install react-icons
 function  NavBar(){
     const navRef = useRef();
@@ -18,7 +19,7 @@ function  NavBar(){
                 <Link to="/home">home</Link>
                 <Link to="/all">Pokemon</Link>
                 <Link to="/catch">Pokedex</Link>
-
+                <Link to="/create"><MdCatchingPokemon/></Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
                 </button>

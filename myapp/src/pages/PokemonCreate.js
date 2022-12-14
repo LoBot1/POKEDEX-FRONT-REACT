@@ -2,40 +2,28 @@ import { useEffect, useInsertionEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link, useParams } from "react-router-dom";
 import { AiFillPlusCircle, FaFrownOpen, FaPlus, FaPlusCircle, } from 'react-icons/fa';
-import { ImExit} from 'react-icons/im';
-
 import {MdCatchingPokemon, MdDelete} from 'react-icons/md';
 import {GrValidate} from 'react-icons/gr';
-import { Catch, Delete, getAll, getCatch, getOne, Update} from '../api/api';
+import { Catch, Create, Delete, getAll, getCatch, getOne, Update} from '../api/api';
 import { useForm } from "react-hook-form";
 import NavBar from '../components/NavBar';
-import '../style/pokemon.css'
+import { ImExit} from 'react-icons/im';
+
  
  
- 
-function PokedexType(props){
-    let { id } = useParams();
-    const [ pokemon, setPokemon ] = useState(null);
+function PokedexCreate(props){
+    const [ pokemon, setPokemons ] = useState({});
     //va s'executer seulement au lancement du composant (dep: [])
-    useEffect(() => {
     // récupérer la liste des users seulement au chargement du composant !
-        const pokemonsFetched = getOne(id);
-        pokemonsFetched
-            .then(result => {
-                setPokemon(result.pokemon)
-            })
-            .catch(error=>console.error("Erreur avec notre API :",error.message));
-    },[]);
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
     console.log(data);
     /*Coder ici pour préparer l'appel réseau POST avec FETCH !*/
      //On peut transformer les données en JSON pour les envoyer dans notre appel
      //JSON.stringify(data);
-    Update(data)
-    
+    Create(data)
     }
-
+   
     return <div className="pokemons-list">
         <div>
             <NavBar />
@@ -45,22 +33,16 @@ function PokedexType(props){
             <div className="bloc-edit">
                     <div className='card'>
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <div className='ntt'>
-                                <input type="hidden" {...register("_id")} defaultValue={pokemon._id} />
-                                <input className='name' {...register("name")} defaultValue={pokemon.name} />
-                                <input className='type1'{...register("type1")} defaultValue={pokemon.type1} />
-                                <input className='type2'{...register("type2")} defaultValue={pokemon.type2} />
-                            </div>
-                            <input type="hidden" className='num'{...register("num")} defaultValue={pokemon.num} />
-                            
+                            <input {...register("name")} placeholder="Name" defaultValue={pokemon.name} />
+                            <input {...register("type1")} placeholder="First Type" defaultValue={pokemon.type1} />
+                            <input {...register("type2")} placeholder="Second Type" defaultValue={pokemon.type2} />
+                            <input {...register("num")} placeholder="Pokemon number" defaultValue={pokemon.num} />
                             <div className='img'>
                                 <img src = {pokemon.img}></img>
                             </div>
-                            <textarea className='desc'{...register("desc")} defaultValue={pokemon.desc} />
-                            <input {...register("img")} defaultValue={pokemon.img} />
+                            <input {...register("desc")} placeholder="Description" defaultValue={pokemon.desc} />
+                            <input {...register("img")} placeholder="Picture's URL" defaultValue={pokemon.img} />
                             <button type="submit">Valider</button>
-
-
                             <div className='button'>
                                 <div className='croix'>
                                     <img src="https://i1.wp.com/lesincoherents.brunovanderaert.com/wp-content/uploads/2019/08/croix-noir.png?fit=741%2C720&ssl=1"></img>
@@ -71,13 +53,12 @@ function PokedexType(props){
                                 </div>
                             </div>
                             <div className='return'>
-                                <Link to="/catch">
-                                    <div>Retour a Pokedex </div>
+                                <Link to="/all">
+                                    <div>Crée le Pokemon </div>
                                 </Link>
                                 <div className='exit'><ImExit/></div>
                             </div>
                         </form>
-
                     </div>
             </div>
         </div>:null
@@ -86,4 +67,4 @@ function PokedexType(props){
     </div>;
 }
  
-export default PokedexType;
+export default PokedexCreate;

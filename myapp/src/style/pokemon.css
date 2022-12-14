@@ -1,218 +1,125 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-
-                
-html body div#root div.pokemons-list div.flex{
-    /* padding: 0px; */
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    background-image: url(../photo/pokemonbanner.jpg);
-    background-repeat: no-repeat;
-    padding-bottom: 14.05%;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web:wght@300;400;700&display=swap');
+html body div#root div.pokemons-list div.fleex div.bloc-edit{
+    margin-top: 10px;
 
 }
 
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne{
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    /* box-shadow: 2px 2px 5px 2px rgb(168, 167, 167); */
-    background-color: blue;
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne:hover{
-    margin-left: -8px;
-    margin-right: -8px;
-    transition: 0.3s;
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div{
-    color: white;
-    font-family: 'Pokemon Solid', sans-serif;   
- 
-                                              
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne:hover{
-    background-color: rgb(47, 48, 95);
-    
-    /* transition: 0.6s; */
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div.num{
-   color: white;
-   padding-left: 10px;
-   padding-bottom: 10px;
-
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div.name{
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div.type {
-    text-align: right;
-    padding-right: 5px;
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card{
     display: flex;
     justify-content: space-around;
-    border-top: 4px solid white;
-    font-size: 20px;
-    letter-spacing: 2px;
+}
+
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+/* composant center */  
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form input{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    margin:10px;
+}
+/* composant center end */
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.img{
+    border: 5px solid black ;
+    background-image: url(https://w0.peakpx.com/wallpaper/121/37/HD-wallpaper-grass-view-background-anime.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form button{
+    font-family: 'Press Start 2P', cursive;
 
 }
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div.type {
-    text-align: right;
-    padding-right: 5px;
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div div.num{
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form textarea.desc{
+    text-align: center;
+    align-self: stretch;
     padding-top: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* width: 1000px; */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    height: 100px;
+    letter-spacing: -1px;
 }
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.button button.nav-btn.nav-close-btn {
-    border: hidden;
-    font-size: 30px;
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.button{
+    display: flex;
+}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.button div.croix{
     align-items: center;
-    -webkit-transform: translate(121px,0px); /* Safari and Chrome */
-  
+    display: flex;
+    justify-content: center;
+}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.button div.croix img{
+    width: 30%;
+    align-items: center;
+}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.button div.rond{
+    transform: rotate(40deg);
+}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.button div.rond div.rond1 img{
+    width: 40%;
+    padding: 20px;
 
 }
-
-
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.name button.nav-btn.nav-close-btn {
-    border-radius: 30px;
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.return{
+    display: flex;
+    justify-content: center;
     padding: 5px;
-    border: 1px solid #0c1c3e;
+    font-family: 'Press Start 2P', cursive;
+
 }
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.name button.nav-btn.nav-close-btn:hover{
-    transition: 0.35s;
-    border: 2px solid var(--textColor);
-    color: white;
-    box-shadow: 2px 2px 20px 2px grey;
-}
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.name button.nav-btn.nav-close-btn a {
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.return a div{
+    padding: 2px;
+    border: 1px solid black;
+    font-size: 11px;
+    padding: 3px;
+    text-decoration: none;
+    background-color: green;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
     color: black;
-}
+    width: inherit;
+    font-family: 'Press Start 2P', cursive;
 
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.button button.nav-btn.nav-close-btn{
-    visibility: hidden;
-    
- }
- html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.button button.nav-btn.nav-close-btn a{
-    background-color: blue;
-    border-radius: 0px;
-    width: auto;
- }
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.button button.nav-btn.nav-close-btn:hover{
-    background-color:rgb(47, 48, 95) ;
 }
-html body div#root div.pokemons-list div.flex div.bloc-pokemonOne div.card div.button button.nav-btn.nav-close-btn a svg{
-    background-color: rgb(255, 255, 255) ;
-    color: #0c1c3e;
-    border-radius: 30px;
-    border: hidden;
-    visibility: visible;
-}
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.return div.exit{
+    background-color: green;
+    border: 1px solid black;
+    border-left: none;
+    font-family: 'Press Start 2P', cursive;
 
-
-html body div#root div.pokemons-list div.titre{
-    background-color: #0c1c3e;
+    /* margin-left: 2px; */
+    display: flex;
     align-items: center;
-    text-align: center;
-    font-family: 'Pokemon Solid', sans-serif;   
-    padding-top: 10px ;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 4px;
-
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.img{
+    height: 200px;
+    
 }
-html body div#root div.pokemons-list div.titre h1{
-    font-family: 'Pokemon Solid', sans-serif;   
-    color: white;
-    border: 2px solid white;
-    border-radius: 30px;
+html body div#root div.pokemons-list div.fleex div.bloc-edit div.card form div.img img{
+    height: 180px;
+    
 }
 @media only screen and (max-width: 1640px){
-    html body div#root div.pokemons-list div.flex{
-        padding: 0px;
-        margin: 0px;
-        background-color: #0c1c3e;
-        display: flex;
-        justify-content: center;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding-top: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
 }
 @media only screen and (max-width: 1110px){
-    html body div#root div.pokemons-list div.flex{
-        padding: 0px;
-        margin: 0px;
-        background-color: #0c1c3e;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding-top: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
 }
 @media only screen and (max-width: 1024px){
-    html body div#root div.pokemons-list div.flex{
-        padding: 0px;
-        margin: 0px;
-        background-color: #0c1c3e;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding-top: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
 }
 @media only screen and (max-width: 850px){
-    html body div#root div.pokemons-list div.flex{
-        padding: 0px;
-        margin: 0px;
-        background-color: #0c1c3e;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding-top: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
-
 }
 @media only screen and (max-width: 650px){
-    html body div#root div.pokemons-list div.flex{
-        padding: 0px;
-        margin: 0px;
-        background-color: #0c1c3e;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding-top: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-
 }
+

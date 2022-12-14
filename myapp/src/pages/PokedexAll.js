@@ -52,11 +52,10 @@ function PokedexAll(props){
         {
             pokemons.map((pokemon,key) =>{
                     return <div key={key} className="bloc-pokemon">
-                    <Link to="/type">
                         <div className='card'>
                             <div className='name'>
                             <button className="nav-btn nav-close-btn" onClick={() => Delete(pokemon.name) } >
-                            <Link className='novalid' to="/catch"><MdDelete/></Link>
+                            <Link className='novalid' to="/all"><MdDelete/></Link>
 
                                     </button>
                                 {pokemon.name}
@@ -87,7 +86,6 @@ function PokedexAll(props){
                                 
                             </div>
                         </div>
-                    </Link>
                 </div>
 
             })
