@@ -5,10 +5,12 @@
     padding: 0px;
     
 }
-
-html body div#root div div.page{
+html body{
+    height: 100%;
+}
+html body{
     /* background-color:#0c1c3e ; */
-    padding-bottom: 8.6%;
+    /* width: 100rem; */
     background-color: rgba(0, 0, 0, 0.6);
     background-image: url(https://images4.alphacoders.com/686/thumb-1920-686166.jpg);
     background-blend-mode: color;
@@ -35,24 +37,34 @@ html body div#root div div.page div div.button1{
 }
 html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn{
     padding: 50px;
-    background-image: url(https://wallpaperaccess.com/full/24936.jpg);
+    background-color: rgba(0, 0, 0, 0.548);
+
+    /* background-image: url(https://wallpaperaccess.com/full/24936.jpg); */
+
     /* background-size: contain; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -50px;
     border: 2px solid rgb(155, 153, 153);
     border-radius: 30px;
+    transition: 0.3s;
 }
 html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn:hover{
     color: white;
     border-color: white;
     box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
-    transition: 0.3s;
+    border-radius: 15% 85% 15% 85% /86% 14% 88% 12% ;
+    transform: rotate(-10deg);
+    transition: 0.5s;
+
 }
 
 html body div#root div div.page div div.button1 button.nav-btn.nav-close-btn a{
     text-decoration: none;
-    padding: 50px;
+    /* padding: 50px; */
+    /* background-color: rgba(0, 0, 0, 0.548); */
+    padding-left: 100%;
+    padding: 10vh;
     font-size: 30px;
     color: rgb(177, 174, 174);
     font-family: 'Pokemon Solid', sans-serif;   
@@ -68,20 +80,24 @@ html body div#root div div.page div div.button2{
 }
 html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn{
     padding: 50px;
-    background-image: url(https://wallpaperaccess.com/full/24936.jpg);
+    padding: 10vh;
+    /* background-image: url(https://wallpaperaccess.com/full/24936.jpg); */
     /* background-size: contain; */
+    background-color: rgba(0, 0, 0, 0.548);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -50px;
-
     border: 2px solid rgb(155, 153, 153);
     border-radius: 30px;
+    transition: 0.3s;
 }
 html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn:hover{
     color: white;
     border-color: white;
     box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
-    transition: 0.3s;
+    border-radius: 86% 14% 88% 12% / 15% 85% 15% 85% ;
+    transform: rotate(10deg);
+    transition: 0.5s;
 }
 html body div#root div div.page div div.button2 button.nav-btn.nav-close-btn a{
     text-decoration: none;

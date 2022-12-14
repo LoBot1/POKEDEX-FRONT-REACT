@@ -23,6 +23,7 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon{
     border-radius: 30px;
     /* box-shadow: 2px 2px 5px 2px rgb(168, 167, 167); */
     background-color: blue;
+    /* transition: 0.3s; */
 }
 html body div#root div.pokemon-list div.flex div.bloc-pokemon:hover{
     margin-left: -8px;
@@ -115,6 +116,10 @@ html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.butto
     border-radius: 30px;
     border: hidden;
     visibility: visible;
+}
+html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.button button.nav-btn.nav-close-btn a svg:hover{
+    transform: rotate(360deg);
+    transition: 0.3s;
 }
 
 html body div#root div.pokemon-list div.flex div.bloc-pokemon div.card div.name button.edit{
