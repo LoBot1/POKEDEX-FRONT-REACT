@@ -58,7 +58,7 @@ export const Delete = async (name) => {
 
 export const getOne = async (Id) => {
     const response = await fetch(
-        ' http://localhost:4444/pokemonAll/selectone?id='+Id, {
+        ' http://localhost:4444/pokemonCatch/selectone?id='+Id, {
             method: 'GET',            
             headers: {
                 'Accept': 'application/json', 
@@ -70,7 +70,7 @@ export const getOne = async (Id) => {
     return pokemons
 }
 
-export const Update = async (Id,name,type1,type2,num,desc,img) => {
+export const Update = async (pokemon) => {
     const response = await fetch(
         ' http://localhost:4444/pokemonCatch/update', {
             method: 'POST',
@@ -78,7 +78,7 @@ export const Update = async (Id,name,type1,type2,num,desc,img) => {
                 'Accept': 'application/json', 
                 'Content-Type':'application/json'
             },
-            body : JSON.stringify({"_id" : Id, "name":name, "type1":type1, "type2":type2 ,"num":num, "desc":desc,"img":img})
+            body : JSON.stringify(pokemon)
         }
     )
     const pokemons = await response.json()
