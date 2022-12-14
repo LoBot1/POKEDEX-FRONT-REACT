@@ -26,7 +26,7 @@ function PokedexHome() {
                     </div>
                     <div className='button2'>
                         <button className="nav-btn nav-close-btn"  >
-                            <Link to="/all">Tous les Pokemon</Link>
+                            <Link to="/all">Tous les Pokemons</Link>
                         </button>
                     </div>
                 </div>
